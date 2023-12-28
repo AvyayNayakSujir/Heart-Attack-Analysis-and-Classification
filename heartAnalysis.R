@@ -1,9 +1,9 @@
-# loading libraries
+#-----------------------------------------------------------LOADING LIBRARIES-----------------------------------------------
 library(ggplot2)
 library(dplyr)
 
 # Load the data set
-data <- read.csv("E:/Code/R/SF/datasets/heart.csv")
+data <- read.csv("E:/Code/R/SF/datasets/heart.csv") #---------------------------------change path                                    
 
 #--------------------------------------------------------INFORMATION ON THE DATASET------------------------------------------
 
@@ -44,7 +44,7 @@ print(semi_clean_data)
 
 #------------------------------------------------------------------------SAVING semi_clean_data as a CSV FILE
 # Specify the path and filename for the new CSV file
-new_csv_path <- "E:/Code/R/SF/datasets/semi_clean_data.csv"
+new_csv_path <- "E:/Code/R/SF/datasets/semi_clean_data.csv"   #-------------------------------change path
 
 # Save the semi_clean_data DataFrame to the new CSV file
 write.csv(semi_clean_data, file = new_csv_path, row.names = FALSE)
@@ -53,7 +53,7 @@ write.csv(semi_clean_data, file = new_csv_path, row.names = FALSE)
 cat("semi clean data has been saved to:", new_csv_path, "\n")
 
 #load the data set
-clean_data <- read.csv("E:/Code/R/SF/datasets/semi_clean_data.csv")
+clean_data <- read.csv("E:/Code/R/SF/datasets/semi_clean_data.csv")       #---------------------------change path
 
 # removing the rows with the number of missing values being greater than 3. Otherwise, filling in the missing values
 for (i in 1:nrow(clean_data)) {
@@ -78,7 +78,7 @@ print(clean_data)
 #------------------------------------------------------------------------SAVING clean_data as a CSV FILE
 
 # Specify the path and filename for the new CSV file
-new_csv_path <- "E:/Code/R/SF/datasets/clean_data.csv"
+new_csv_path <- "E:/Code/R/SF/datasets/clean_data.csv"      #-----------------------------------change path
 
 # Save the clean_data DataFrame to the new CSV file
 write.csv(clean_data, file = new_csv_path, row.names = FALSE)
