@@ -1,0 +1,11 @@
+1. `age`
+2. `gender` (1 = male; 0 = female)
+3. `CPT` (chest pain type)
+4. `RBP` (resting blood pressure in mm Hg)
+5. `cholesterol` (in mg/dl)
+6. `FBS` (fasting blood sugar test > 120 mg/dl) (1 = true; 0 = false)
+7. `R-ECG` (resting electrocardiographic results) (1 = positive; 0 = negative)
+8. `MHR` (maximum heart rate achieved)
+9. `EIA` (exercise induced angina) (1 = yes; 0 = no)
+10. `previous_peak`
+11. `output` (1 = heart attack; 0 = no heart attack)
